@@ -1,0 +1,364 @@
+{
+  "version": "v41",
+  "date": "2026-10-27",
+  "kind": "github-pages-root",
+  "source_commit": "317281f4524f0ee4be0b668ea6e4f3328afb2dfe",
+  "runtime_file_count": 68,
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3748,
+      "sha256": "d3250e2f5a6edbc7c8751c224567f48e4dad29d17fc0251af88616618b5f790c"
+    },
+    {
+      "path": "_config.yml",
+      "bytes": 69,
+      "sha256": "60411bcfef297516c883f5d49d64f1243c6695a76f923ddf2abd87176d3fefa1"
+    },
+    {
+      "path": "assets/building2.glb",
+      "bytes": 10495444,
+      "sha256": "a9b28a9a46fa69e83db8083b0392752e5ae4dd8bc80c408193448ec1b197fe6c"
+    },
+    {
+      "path": "assets/fonts/README.md",
+      "bytes": 294,
+      "sha256": "afff963c5684fd93a9fd65a616e0cd57adf7c1cc85d53ac61dab95c6b307ccc8"
+    },
+    {
+      "path": "assets/fonts/SUIT-LICENSE.txt",
+      "bytes": 4380,
+      "sha256": "30d101ee3c35ef629d622d933d261a27b2f60223e0a3b0f36791e569c2b9daa9"
+    },
+    {
+      "path": "assets/fonts/SUIT-Variable.woff2",
+      "bytes": 624536,
+      "sha256": "aa894a204d5a6fbae259dac6868d350cbd373a390caee0313f92946af741df23"
+    },
+    {
+      "path": "building-placement.js",
+      "bytes": 945,
+      "sha256": "aef1943a68144afb5d9a58422627ebf6a13ba4fd66541e4b2329345e19fd3220"
+    },
+    {
+      "path": "cafe-npcs.js",
+      "bytes": 22493,
+      "sha256": "07a03354dd8aca68e01f22e0e9ff39a9277f969db866acda9cbf89a4b43b4911"
+    },
+    {
+      "path": "day-cycle.js",
+      "bytes": 708,
+      "sha256": "a9ab543e091b30f5303368aaefe10294e65d92cfbc85996c45e7bb5930d05760"
+    },
+    {
+      "path": "environment-garden.js",
+      "bytes": 12067,
+      "sha256": "372b55744280798d00e4cdff813d381f3e6ef9aa7013c361d0f55215c7d452ed"
+    },
+    {
+      "path": "first-person-dissolve.js",
+      "bytes": 15162,
+      "sha256": "2c80c5bbc764ef4a32f7b07889beb523a87ebedabef2f6e49a71ff1165e95771"
+    },
+    {
+      "path": "garden-birds.js",
+      "bytes": 15148,
+      "sha256": "73fb5aaf23b266ea807bb1015129006c08664e09246ca02d5f3074f43c620330"
+    },
+    {
+      "path": "glass-panes.js",
+      "bytes": 1214,
+      "sha256": "fa44abc39bada44ad422d1dc3a337003de891b552d559df42f1934fd598441cf"
+    },
+    {
+      "path": "index.html",
+      "bytes": 10247,
+      "sha256": "f2a690cb8516fac210b51f82202a8a5bfc70885d6faa636322597d4f2d93f5b6"
+    },
+    {
+      "path": "intro-approach.js",
+      "bytes": 1706,
+      "sha256": "cdb15281afa5d6a29c02daafa2078f763d3fbe673b8cf87a3c5a3505f2b70bcb"
+    },
+    {
+      "path": "intro-scroll.js",
+      "bytes": 7926,
+      "sha256": "5ca3576bb4fd6624c98437cefa42db6c51c1e225f119aac5a77a0a52fec364da"
+    },
+    {
+      "path": "intro-visuals.js",
+      "bytes": 1116,
+      "sha256": "52b1f3f868563488f3fe24b72eb2dd94c2c4bbabd404c95e356d8ff999b465a5"
+    },
+    {
+      "path": "main-garden.js",
+      "bytes": 35656,
+      "sha256": "4b7e00a9f7f6a72bc40a5bf1ab6edc27ebce37938cfca54147630c02445f691d"
+    },
+    {
+      "path": "npc-character.js",
+      "bytes": 8555,
+      "sha256": "bbc7eb500a634fc1cacae97a556e79e71d664b35f21d75ad7ab00f04a78ed894"
+    },
+    {
+      "path": "npc-destinations.js",
+      "bytes": 2887,
+      "sha256": "f97d4640a3b3a106c46b6ff344e4c6a6be8cca68870aaa4257b0d348f0180fe2"
+    },
+    {
+      "path": "npc-navigation.js",
+      "bytes": 5936,
+      "sha256": "dfeeb8670dde7851ec452e6d320b4b64c9030dd170a7c43634e884a84f5a3a31"
+    },
+    {
+      "path": "npc-placement.js",
+      "bytes": 710,
+      "sha256": "96f75e3b133c4a21e5e1a5c13b021cb9cf154c2d5460a17bf1e6f208326268a8"
+    },
+    {
+      "path": "rain/THIRD_PARTY_NOTICES.md",
+      "bytes": 2191,
+      "sha256": "b983e49ab583163dce75fa9c96f9e71e80d2d197300ff85da1ddc05a8599cbcd"
+    },
+    {
+      "path": "rain/assets/drop-alpha.png",
+      "bytes": 5190,
+      "sha256": "b47a0ce3f301530a184b3f61aef521cfc4557e2e2aa0d834a70c5840882afb96"
+    },
+    {
+      "path": "rain/assets/drop-color.png",
+      "bytes": 5067,
+      "sha256": "0adcebe3a4ab3a8f71f49ebd98d23531330a74f0d439b7a8ae6307e95c372cfa"
+    },
+    {
+      "path": "rain/bead-field.js",
+      "bytes": 1713,
+      "sha256": "adc96ef4d0ec7cadfe2f2792d0d357d8e61c85b5b79bbe1201b7c2f0280815d1"
+    },
+    {
+      "path": "rain/codrops-physics.js",
+      "bytes": 10655,
+      "sha256": "779b7be257a4e699fe2f799aae4bb28fd8cc3d8c815bd1e8e539181173fcceab"
+    },
+    {
+      "path": "rain/create-canvas.js",
+      "bytes": 170,
+      "sha256": "f2a9735cfbbb8f91eac3956b7762a25da2c461130a894766446c8315476774d5"
+    },
+    {
+      "path": "rain/drop-contour.js",
+      "bytes": 3040,
+      "sha256": "869337c485e7756d4b3e487b9fb3058d3a7c61b6705c9bb838bc8f1212743252"
+    },
+    {
+      "path": "rain/drop-mass.js",
+      "bytes": 229,
+      "sha256": "e46bcb0d92c96494a79fd7ecd10d1f65b16359dbe3732a2699a4dd186b77f99a"
+    },
+    {
+      "path": "rain/drop-orientation.js",
+      "bytes": 3882,
+      "sha256": "64be183b74e93f8cb316c5cf7ef720eeee6570aee8f49a00fa8c2cec83f88044"
+    },
+    {
+      "path": "rain/drop-shape.js",
+      "bytes": 895,
+      "sha256": "fa69357a6f0964613e711327af05311b09686efdc2a919600bbf0d646f457d13"
+    },
+    {
+      "path": "rain/flowing-drop-size.js",
+      "bytes": 447,
+      "sha256": "c364360e46582139b76fea23a9d0dc40ed9cc4fab5a7f67002c556021bbf2105"
+    },
+    {
+      "path": "rain/glass-beads.js",
+      "bytes": 1139,
+      "sha256": "7c054665891b725d44b65734028b88a51ed02d0ac85ee0f54a6cdfd1397ad039"
+    },
+    {
+      "path": "rain/heartfelt-field.js",
+      "bytes": 7643,
+      "sha256": "4162942b7685a3125c9e12748ab41ab735f77d41c0d66f44d3e5c783e119ff6a"
+    },
+    {
+      "path": "rain/heartfelt-rain.js",
+      "bytes": 311,
+      "sha256": "6481b8a8f445ea59fba3ea1346d3ea63ccdfab61e8b3428235c9ff2d397de026"
+    },
+    {
+      "path": "rain/pane-visibility.js",
+      "bytes": 8395,
+      "sha256": "fbc2ee3da76c1d2ddee4899cdeb5330e46c398bf6b5299936d13dc2668af2097"
+    },
+    {
+      "path": "rain/path-noise.js",
+      "bytes": 1037,
+      "sha256": "56c54fd35ba70d1d46e58146766db2d790fd98abcd4835cef94da6c5eca1ae44"
+    },
+    {
+      "path": "rain/physics.js",
+      "bytes": 336,
+      "sha256": "9b33f3dd9ba4cabfceb91d4ea8b7a96deccc38f275ce994cc9deb0e48fdfa99d"
+    },
+    {
+      "path": "rain/rain-intensity.js",
+      "bytes": 262,
+      "sha256": "da0236a13307d42f773ee66caa8e94161b800dcb9e86547d05cd0e70025000c4"
+    },
+    {
+      "path": "rain/raindrops.js",
+      "bytes": 12720,
+      "sha256": "9cd86b865b4e3f6f2b008a205aeb590d7017e7f8a57a39fb75efe172321dd5e0"
+    },
+    {
+      "path": "rain/render-size.js",
+      "bytes": 448,
+      "sha256": "77764808fe1a80c2409dcadf1e6b23aa1ca679e858a89d5e333b95d2d52f8c31"
+    },
+    {
+      "path": "rain/simulation.js",
+      "bytes": 4257,
+      "sha256": "c56c53d5f41cc7ffa7a1b5a8ad64a8347c568459d451306c4c0712a5d6ae2979"
+    },
+    {
+      "path": "rain/surface-friction.js",
+      "bytes": 1102,
+      "sha256": "eab5b4f32785736531e10d127f3f040f472cc18d7671d152fa475de346138a3f"
+    },
+    {
+      "path": "rain/trail-beads.js",
+      "bytes": 1938,
+      "sha256": "bcac79871c6bf18748dc067b847d104248970fab6f030ef9aa377902eba81d66"
+    },
+    {
+      "path": "rain/trail-memory.js",
+      "bytes": 4176,
+      "sha256": "6fa55715a1bfbbbadc5322a7d07b38bb363bf2440e3181fe91a5dc32c6060f6d"
+    },
+    {
+      "path": "rain/turn-drag.js",
+      "bytes": 954,
+      "sha256": "f3b484a3cadaeb8eef296e5ec8130d1fdc399f450b226068e75301ff3c6b9380"
+    },
+    {
+      "path": "rain/window-material.js",
+      "bytes": 12453,
+      "sha256": "85ae7dd540a6c630d65c24f05004848b60ad8e77c204e54be9daf9811dfe097c"
+    },
+    {
+      "path": "rooms-building2.js",
+      "bytes": 1048,
+      "sha256": "d90fd7617d60bb7a9bdabed029c19aa253302453dbd81e4ab30f78538d711311"
+    },
+    {
+      "path": "seats-building2.js",
+      "bytes": 3077,
+      "sha256": "3cbd68b92ca5c0ccd77c600103feee6290fc6e8ecccdca919dbf3513d543dbc9"
+    },
+    {
+      "path": "sound-environment.js",
+      "bytes": 1141,
+      "sha256": "d51bfc0cdc463eb0f0db96b5400f1e8291da315410a20119e14d4665ce57b573"
+    },
+    {
+      "path": "style.css",
+      "bytes": 21166,
+      "sha256": "150dfb1303e0cb6f38fdf5d86596474ba556ab2444d26038ef783fdfd927302d"
+    },
+    {
+      "path": "style/model-outline.js",
+      "bytes": 18156,
+      "sha256": "64c9da302927a1d75d761206d41b306b099f568a36af129890c1e1186fd5e649"
+    },
+    {
+      "path": "style/ordered-dither.js",
+      "bytes": 7738,
+      "sha256": "176485cd9bb009dd7d814cd4eef376c15f1cf769c5ee9274ca87e18ea97303c8"
+    },
+    {
+      "path": "style/toon-shadows.js",
+      "bytes": 11233,
+      "sha256": "4f3810c71360f72a4508ff67e1adb5300655004932194c470387b045b7b2adc6"
+    },
+    {
+      "path": "ui-time-theme.js",
+      "bytes": 3581,
+      "sha256": "ba7cef0691753b27540067a524db8d90949fcc99678339efcae3c45b05a82365"
+    },
+    {
+      "path": "vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "vendor/controls/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "path": "vendor/loaders/GLTFLoader.js",
+      "bytes": 114739,
+      "sha256": "67ac5551fdafa6e349bd80c8f8e5e39c136d6b2fb1ad647db9abb21dc86f9e4a"
+    },
+    {
+      "path": "vendor/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "path": "vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "path": "vendor/utils/BufferGeometryUtils.js",
+      "bytes": 35539,
+      "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751"
+    },
+    {
+      "path": "walk-dissolve.js",
+      "bytes": 2032,
+      "sha256": "19efb15a8046fb1c24dd6243f39aa28a4f714585f952947b4474c509570dd0ec"
+    },
+    {
+      "path": "walk-zones.js",
+      "bytes": 10478,
+      "sha256": "6d2addac3121f0a70e4382015bdbbd634a04a4444a3d26e66f6a303eb8ab89a6"
+    },
+    {
+      "path": "weather/exterior-rain.js",
+      "bytes": 9354,
+      "sha256": "96c15b78497a447913000b17521cbf81830f44fec1dcbae7ab6831020c89aeee"
+    },
+    {
+      "path": "weather/rain-renderer.js",
+      "bytes": 8979,
+      "sha256": "584fe61d00b14873b440db1870dd10e8427e3f144b1f2fbf2511b40a21a8628e"
+    },
+    {
+      "path": "weather/wet-ground-visibility.js",
+      "bytes": 7213,
+      "sha256": "16cedba07b1c27947580b2fb6ba951bdcbfe16aa1c7fdec1acd3d0d0f45e11f9"
+    },
+    {
+      "path": "weather/wet-ground.js",
+      "bytes": 17291,
+      "sha256": "6da6dde85011b69f76f405973b50364ca38728560afc29a5740e5d7b0f79f1d3"
+    },
+    {
+      "path": "weather/wet-materials.js",
+      "bytes": 13125,
+      "sha256": "f59b0645ad2dc680e4efea0150b566a70ff6b8310f06377b705a4cd872aa5762"
+    },
+    {
+      "path": "window-rain.js",
+      "bytes": 9173,
+      "sha256": "705079e03743bf01e0094053fe140263f529f07c7443de7a405e544307499c20"
+    }
+  ]
+}

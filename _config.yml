@@ -1,0 +1,3 @@
+# Fallback when only visible files are uploaded.
+include:
+  - vendor

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e6e9d9">
+  <meta name="description" content="직접 만든 건물에서 시작된 작은 풍경. 시간과 날씨를 바꾸며 나만의 3D 디오라마를 천천히 둘러보세요.">
+  <title>Lazy Day — 작은 정원</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%233c5544'/%3E%3Cpath d='M18 44V25l14-10 14 10v19z' fill='%23f5f3e7'/%3E%3Cpath d='M29 44V31h7v13' fill='%2394ac7a'/%3E%3C/svg%3E">
+  <link rel="preload" href="./assets/fonts/SUIT-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./style.css?v=41">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/"}}</script>
+<script type="module" src="./main-garden.js?v=41"></script>
+</head>
+<body class="intro-active">
+  <section id="start-screen" class="start-screen" aria-labelledby="start-title" tabindex="-1">
+    <h1 id="start-title" class="start-logo">Lazy Day</h1>
+    <div class="start-bottom"><p id="start-status" class="start-status" role="status">풍경을 준비하고 있어요 · 0%</p><button id="start-enter" class="start-enter" type="button" disabled>아래로 스크롤해 둘러보기</button></div>
+  </section>
+  <div class="intro-veil" aria-hidden="true"></div>
+  <div id="error" class="error-panel" role="alert" hidden><strong>풍경을 불러오지 못했어요.</strong><p id="error-message"></p><button id="reload" class="primary-button">다시 불러오기</button></div>
+  <div id="experience" class="experience" inert aria-hidden="true">
+  <div id="scene" aria-label="드래그해서 회전하고 Ctrl 또는 Command와 휠, 두 손가락으로 확대하는 3D 건물 풍경"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="top-actions"><button id="intro-return" class="start-return" type="button">시작 화면</button><button id="dither-toggle" class="dither-toggle" type="button" aria-label="디더링 끄기" aria-pressed="true">디더링 ON</button><button id="sound" class="icon-button" aria-label="자연 소리 켜기" aria-pressed="false" title="자연 소리"><svg viewBox="0 0 24 24"><path d="m11 5-6 4H2v6h3l6 4V5Z"/><path class="sound-wave" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/><path class="sound-off" d="m16 9 6 6m0-6-6 6"/></svg></button><button id="info" class="icon-button" aria-label="작품 정보 열기" title="작품 정보"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg></button></div>
+  </header>
+  <main>
+    <aside class="view-tools" aria-label="시점 조작"><button data-view="orbit" class="view-button active" aria-label="기본 시점" aria-pressed="true"><svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></svg><span>전체</span></button><button data-view="front" class="view-button" aria-label="정면 시점" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M4 21V7l8-4 8 4v14H4Zm5 0v-7h6v7M8 8h1m6 0h1M8 11h1m6 0h1"/></svg><span>정면</span></button><button data-view="top" class="view-button" aria-label="위에서 보기" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4Zm0 8h16M12 4v16"/></svg><span>위에서</span></button><button id="enter-indoor" class="view-button" aria-label="실내 1인칭 모드" aria-pressed="false" disabled title="건물을 불러온 뒤 실내로 들어갈 수 있어요"><svg viewBox="0 0 24 24"><path d="M4 21V3h12v18H4Zm12-12h5m-3-3 3 3-3 3M8 12h1"/></svg><span>실내</span></button><span class="tool-divider"></span><button id="rotate" class="view-button" aria-label="자동 회전 켜기" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M20 7a9 9 0 1 0 1 8M20 3v5h-5"/></svg><span>회전</span></button><button id="fullscreen" class="view-button" aria-label="전체 화면" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg><span>화면</span></button></aside>
+    <div class="scene-status"><span class="live-dot"></span><span id="mood">느긋한 오후</span><span class="status-divider">/</span><span id="weather-caption">맑은 하늘</span></div>
+    <div id="loading" class="loading" role="status"><div class="loading-house">⌂</div><strong>작은 풍경을 준비하고 있어요</strong><span id="load-progress">건물 불러오는 중</span><div class="load-track"><i id="load-bar"></i></div></div>
+  </main>
+  <footer class="bottom-area">
+    <div class="interaction-hint"><svg viewBox="0 0 20 20"><rect x="5" y="2" width="10" height="15" rx="5"/><path d="M10 2v5"/></svg><span class="overview-desktop">드래그로 둘러보기 <i>·</i> Ctrl/⌘ + 휠로 확대 <i>·</i> 위로 스크롤해 처음으로</span><span class="overview-touch">드래그로 둘러보기 <i>·</i> 두 손가락으로 확대</span></div>
+    <section class="control-dock" aria-label="풍경 설정">
+      <div class="weather-block"><div class="control-label">오늘의 날씨 <span>WEATHER</span></div><div class="weather-options"><button data-weather="clear" class="weather-button active" aria-label="맑음" aria-pressed="true" title="맑음"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span>맑음</span></button><button data-weather="cloudy" class="weather-button" aria-label="구름" aria-pressed="false" title="구름"><svg viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 .6-9.96A6 6 0 0 1 19 10a4 4 0 0 1-1 8H7Z"/></svg><span>구름</span></button><button data-weather="rain" class="weather-button" aria-label="비" aria-pressed="false" title="비"><svg viewBox="0 0 24 24"><path d="M6 14a4 4 0 0 1 .3-8A5 5 0 0 1 16 7a3.5 3.5 0 0 1 2 7M8 17l-1 3m6-3-1 3m6-3-1 3"/></svg><span>비</span></button></div></div>
+      <div class="dock-divider"></div>
+      <div class="time-block"><div class="time-heading"><label class="control-label" for="time">하루의 순간 <span>TIME OF DAY</span></label><div><output id="time-display" for="time">15:00</output><button id="time-play" class="tiny-button" aria-label="시간 자동 흐름 켜기" aria-pressed="false" title="시간 자동 흐름">▶</button></div></div><input id="time" type="range" min="0" max="1439" step="1" value="900" aria-label="시간"><div class="time-marks"><button data-time="390">아침</button><button data-time="720">낮</button><button data-time="1080">노을</button><button data-time="1320">밤</button></div></div>
+      <button id="reset" class="reset-button" aria-label="풍경 초기화" title="처음 풍경으로"><svg viewBox="0 0 24 24"><path d="M4 9a8 8 0 1 1 0 6M4 4v5h5"/></svg></button>
+    </section>
+  </footer>
+  <section id="indoor-ui" aria-label="실내 1인칭 조작" hidden>
+    <div class="indoor-top"><span class="indoor-badge"><i></i> <span id="walk-mode">실내 1인칭</span></span><div id="floor-options" class="floor-options" role="group" aria-label="층 선택"><button data-floor="1" aria-pressed="true">1층 카페</button><button data-floor="2" aria-pressed="false">2층 창가</button></div><button id="exit-indoor" class="exit-indoor" aria-label="전체 시점으로 돌아가기">전체 보기</button></div>
+    <section id="door-prompt" class="door-prompt" aria-label="문 출입 안내" hidden><span id="door-caption">입구 · 정원으로 이어지는 문</span><button id="door-action">외부로 나가기</button></section>
+    <section id="seat-prompt" class="seat-prompt" aria-label="의자 상호작용" hidden><span id="seat-caption">창가 의자</span><button id="seat-action">앉기</button></section>
+    <div class="crosshair" aria-hidden="true"></div>
+    <div class="indoor-help"><strong id="room-name">1층 카페</strong><span class="desktop-help">마우스 드래그로 시선 · WASD / 방향키로 이동 · Esc 전체 보기</span><span class="touch-help">화면을 드래그해 둘러보고, 화살표로 이동하세요</span></div>
+    <div id="movement-pad" class="movement-pad" role="group" aria-label="실내 이동"><button data-move="forward" class="move-forward" aria-label="앞으로 이동">↑</button><button data-move="left" class="move-left" aria-label="왼쪽으로 이동">←</button><button data-move="backward" class="move-backward" aria-label="뒤로 이동">↓</button><button data-move="right" class="move-right" aria-label="오른쪽으로 이동">→</button><span aria-hidden="true">이동</span></div>
+  </section>
+  <div id="toast" class="toast" role="status"></div>
+  <dialog id="about" aria-labelledby="about-title"><button id="close-info" class="dialog-close" aria-label="작품 정보 닫기">×</button><span class="eyebrow">ABOUT THIS LITTLE WORLD</span><h2 id="about-title">당신의 모델로 만든<br>작은 풍경.</h2><p>직접 만든 <b>건물2.glb</b>를 중심으로 정원과 나무, 빛과 날씨를 더한 인터랙티브 디오라마입니다.</p><dl><div><dt>모델</dt><dd>사용자 제작 건물</dd></div><div><dt>표현</dt><dd>실시간 3D · 투명 유리</dd></div><div><dt>외부 조작</dt><dd>드래그 · Ctrl/⌘ + 휠 · 두 손가락 확대</dd></div><div><dt>실내 조작</dt><dd>드래그로 시선 · WASD / 화살표 이동</dd></div></dl><p class="about-note">실내 버튼으로 1층과 2층에 들어가 창문 너머의 풍경을 볼 수 있어요. 1층 문 가까이에서 밖으로 나가 정원을 걷고, 다시 카페로 들어올 수 있어요. 모델의 원래 형태를 살리고 실내 조명을 더했어요. 자연 소리는 브라우저에서 합성됩니다.</p><p class="about-note">창문 빗물: Lucas Bebber / Codrops · Martijn Steinrucken / BigWings. <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 3.0</a> · Over-the-Window 기반.</p><a href="./assets/building2.glb" download="건물2.glb" class="model-download">원본 모델 내려받기</a></dialog>
+  </div>
+</body>
+</html>
